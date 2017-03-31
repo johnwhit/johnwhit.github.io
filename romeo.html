@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>John Whitworth | Romeo</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="splash">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+       <!-- box-header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="index.html"><img src="img/logo.svg" width="50" alt="Logo"></a>
+            </div>
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box-header -->
+        
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Résumé</a></li>
+
+                <li class="box-label"></li>
+
+                <li class="box-social"><a href="mailto:johnwhit@icloud.com" target="_blank"><i class="ion-ios-email"></i></a></li>
+                <li class="box-social"><a href="https://www.instagram.com/johnwhitworth/" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
+                <li class="box-social"><a href="http://tinyurl.com/m4ntnh2" target="_blank"><i class="ion-social-linkedin-outline"></i></a></li>
+                <li class="box-social"><a href="https://github.com/johnwhit" target="_blank"><i class="ion-social-github"></i></a></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+    </div>
+    
+    <!-- top-bar -->
+    <div class="top-bar">
+        <h1>Romeo.</h1>
+        <p>
+            <a href="corona.html"><i class="ion-arrow-left-b"></i>&nbsp;&nbsp;Corona Borealis</a>
+            &nbsp;|&nbsp;
+            <a href="portfolio.html">Full Portfolio</a>
+            &nbsp;|&nbsp;
+            <a href="pounce.html">Pounce&nbsp;&nbsp;<i class="ion-arrow-right-b"></i></a>
+        </p>
+    </div>
+    <!-- end top-bar -->
+    
+    <!-- main-container -->
+    <div class="container main-container">
+        <div class="col-md-9">
+            <img src="img/romeo/hero_shot.jpg" alt="" class="img-responsive" />
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-3">
+            <ul class="cat-ul">
+                <p><b>Mechanical</b>
+                <li><i class="ion-ios-circle-filled"></i> Two-Wheel Drivetrain</li>
+                <li><i class="ion-ios-circle-filled"></i> Ball Launcher</li>
+                <li><i class="ion-ios-circle-filled"></i> Aiming Turret</li>
+                <li><i class="ion-ios-circle-filled"></i> Front &amp; Rear Bumpers</li>
+            </ul>
+            <ul class="cat-ul">
+                <p><b>Electrical</b>
+                <li><i class="ion-ios-circle-filled"></i> TIVA Launchpad</li>
+                <li><i class="ion-ios-circle-filled"></i> LOC Communicator</li>
+                <li><i class="ion-ios-circle-filled"></i> Power Distribution</li>
+                <li><i class="ion-ios-circle-filled"></i> Drive-Break Motor Driver</li>
+                <li><i class="ion-ios-circle-filled"></i> Locked-Antiphase Motor Driver</li>
+                <li><i class="ion-ios-circle-filled"></i> IR Frequency &amp; Amplitude Sensing</li>
+                <li><i class="ion-ios-circle-filled"></i> Magnetic Field Sensing</li>
+                <li><i class="ion-ios-circle-filled"></i> Wire Following</li>
+                <li><i class="ion-ios-circle-filled"></i> Servo Control</li>
+                <li><i class="ion-ios-circle-filled"></i> Indicative Lighting</li>
+            </ul>
+        </div>
+
+        <div class="col-md-12">
+            <h3 class="text-uppercase">Romeo</h3>
+            <h5>Autonomous Robot</h5>
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-9">
+            <p><b>Project Description.</b><br>
+            The goal of the project was to apply our knowledge from class about motors, drivers, signal conditioning, mechanical design, SPI communication, and hierarchical state machines to solve an open-ended problem.</p>
+            <p>Our task was to design and create an autonomous robot to play a game simulating construction delivery. In the game, two robots competed by navigating across a field to check into stations and by ballistically delivering construction supplies. During gameplay, each robot traveled to a specified station on its side of the game board (out of three in total) and read and reported the frequency of the magnetic field at that station to check in. After checking in successfully, the robot became eligible to score by shooting a foam ball into a specified bucket about six feet away. The opening lasted for 20 seconds or until a shot was made. Any ties were broken based on the number of successful check-ins. There was a "supply depot" on each side of the board for the robots to reload when they shot all of their balls.</p>
+            <p>We were provided with drive motors, a microcontroller, and an SPI communication peripheral device and then had the freedom to work with any other sensors or motors of our choosing to accomplish our task. The game board featured a line of black tape with electrical wire underneath and four infrared (IR) beacons at fixed locations pulsing at unique frequencies to facilitate multiple navigation strategies. When a bucket was opened for shooting, another IR beacon on the bucket pulsing at a fifth frequency would turn on as well. The line ran from the starting wall, through each of the stations (staging areas), and ended at the reloading position. Click <a href="img/romeo/218b_project.pdf" target="_blank">here</a> for the complete project description (including a drawing of the game board).</p>
+            <div class="h-30"></div>
+
+            <p><b>Our Strategy.</b><br>
+            Our robot, Rrromeo, was designed to follow the line through the staging areas and never leave it for any reason. To accomplish this, we used two sets of line following sensors so that we could drive forward and backward on the line without turning around, and we designed a turret on top of the vehicle that could rotate independently of the base to aim the shooter without ever turning away from the line. This strategy was intended to minimize the complexity of our drive control logic.</p>
+            <p>To follow the line, we designed resonant RLC circuits (two in front, two in back) to detect the magnetic field generated by the current flowing through the wire under the black tape on the game board. We implemented closed loop PD control on the difference between the two signals in order to set our drive motor speeds to follow the line.</p>
+            <p>To detect any obstacles along the way, we designed a bumper suspended with rubber bands that would trigger a limit switch whenever the robot made contact with the wall or any other obstruction.</p>
+            <p>To read the frequency of the magnetic field at the staging areas, we placed a Hall Effect sensor near the ground underneath our robot.</p>
+            <p>To find a specific IR beacon, we placed a photodiode at the center of our turret configuration to detect the frequency and align the turret to that beacon. We also designed two phototransistor peak detector circuits to measure the amplitude of the IR signal and placed them on either side of the photodiode. These circuits were used for differential closed loop PD control to align our turret centrally to the beacon and maintain that position even if the robot were to drive to a new position. This was intended to save time and reduce error in searching for a new beacon by maintaining a constant reference position. It also prevented alignment with the opposing team's target beacon because all of the bucket beacons had the same frequency.</p>
+            <p>To score points once aligned, we designed a shooter that used a high torque servo motor to bend a metal ruler and then release it to flick a ball at the bucket. This shooter was fed by a loading ramp that aligned to the supply depot for reloading and a second servo that placed a single ball at a time in the launch position.</p>
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-12">
+            <p><b>Gallery.</b></p>
+        </div>
+
+        <div class="col-md-4">
+            <img src="img/romeo/render.jpg" alt="" class="img-responsive" />
+            <p>CAD Rendering</p>
+            <div class="h-30"></div>
+        </div>
+        <div class="col-md-4">
+            <img src="img/romeo/drivetrain.jpg" alt="" class="img-responsive" />
+            <p>Drivetrain in our First Design</p>
+            <div class="h-30"></div>
+        </div>
+        <div class="col-md-4">
+            <img src="img/romeo/romeo.jpg" alt="" class="img-responsive" />
+            <p>The Final Design</p>
+            <div class="h-30"></div>
+        </div>
+
+        
+        <div class="col-md-4">
+            <img src="img/romeo/assembling.jpg" alt="" class="img-responsive" />
+            <p>Getting Involved in the Assembly</p>
+            <div class="h-30"></div>
+        </div>
+        <div class="col-md-4">
+            <img src="img/romeo/game.jpg" alt="" class="img-responsive" />
+            <p>In the Semi-Finals</p>
+            <div class="h-30"></div>
+        </div>
+        <div class="col-md-4">
+            <img src="img/romeo/team.jpg" alt="" class="img-responsive" />
+            <p>Team Romeo</p>
+            <div class="h-30"></div>
+        </div>
+    </div>
+    <!-- end main-container -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">© Box Portfolio 2016</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-arrow-up-b"></i></a>
+    <!-- end back to top -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
+    
+    <!-- google analytics  -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76796224-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>
